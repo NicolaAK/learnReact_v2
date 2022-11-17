@@ -20,7 +20,7 @@ function PostIdPage() {
     useEffect(() => {
         fetchPostById(params.id)
         fetchComments(params.id)
-    }, [])
+    }, []) 
     return (
         <div>
             <h1>Post: {params.id}</h1>
