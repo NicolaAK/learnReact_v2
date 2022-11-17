@@ -1,6 +1,7 @@
 #root {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App {
@@ -20,24 +21,35 @@
   font-size: medium;
 }
 
-.remove-btn {
-  margin-right: 0.5rem;
+.post__btns {
+  display: flex;
 }
 
-.post-enter {
-  transform: translateX(-350px);
+.page__wrapper {
+  margin-top: 30px;
+  display: flex;
 }
 
-.post-enter-active {
-  transform: translateX(0px);
-  transition: all 500ms ease-in;
+.page {
+  padding: 10px;
+  border: 1px solid teal;
+  cursor: pointer;
 }
 
-.post-exit {
-  opacity: 1;
+.page__current {
+  border: 2px solid orange;
+  font-weight: bold;
 }
 
-.post-exit-active {
-  transform: translateX(-350px);
-  transition: all 500ms ease-in;
+.navbar {
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background: lightgray;
+}
+
+.navbar__links {
+  margin-left: auto;
 }
